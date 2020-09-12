@@ -3,11 +3,19 @@ def selects_all_female_bears_return_name_and_age
 end
 
 def selects_all_bears_names_and_orders_in_alphabetical_order
+<<<<<<< HEAD
   "SELECT name FROM bears ORDER BY name"
 end
 
 def selects_all_bears_names_and_ages_that_are_alive_and_order_youngest_to_oldest
   "SELECT name, age FROM bears WHERE alive = 1 ORDER BY age ASC;"
+=======
+  "SELECT name, age FROM bears ORDER BY age ASC LIMIT 1;"
+end
+
+def selects_all_bears_names_and_ages_that_are_alive_and_order_youngest_to_oldest
+   "SELECT color, COUNT(color) FROM bears GROUP BY color ORDER BY COUNT(*) DESC LIMIT 1;"
+>>>>>>> bfb66bbff5ebfa3f6741c156475db0e284dc36ea
 end
 
 def selects_oldest_bear_and_returns_name_and_age
